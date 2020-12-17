@@ -39,12 +39,12 @@ export const Basket = (props: BasketType) => {
         </ListItem>
       ))}
       {!!props.basket.length &&
-      <Button variant="outlined" style={{margin: '5px'}} onClick={removeAllItems}>
+      <Button variant="outlined" style={{margin: '15px'}} onClick={removeAllItems}>
         Remove all
       </Button>}
       {!props.basket.length && <div style={{padding: '10px', color: 'grey'}}>Cart is empty</div>}
       <Divider/>
-      <Typography variant="h5" component="h2">Total: {'total'} $</Typography>
+      <Typography style={{margin: '15px'}} variant="h5" component="h2">Total: {'total'} $</Typography>
       <Divider/>
     </List>
   )
