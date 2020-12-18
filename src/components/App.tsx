@@ -29,7 +29,7 @@ export const App = () => {
       <Content antiseptics={antiseptics} items={masks}/>
       <Drawer variant="persistent" anchor="left" open={openMenu}>
         <Button style={{margin: '10px'}} onClick={handleDrawerCloseMenu}><ChevronLeftIcon/></Button>
-        <List>
+        <List style={{width: '320px'}}>
           <NavLink onClick={() => handleDrawerCloseMenu()} to='/'
                    style={{color: 'black', textDecoration: 'none'}}>
             <ListItem button>

@@ -16,14 +16,13 @@ type BasketType = {
 }
 export const Basket = (props: BasketType) => {
 
-
   const removeAllItems = () => {
     alert('remove all')
     props.closeBasket()
   }
 
   return (
-    <List style={{textAlign: 'center'}}>
+    <List style={{textAlign: 'center', width: '320px'}}>
       {props.basket.map((item) => (
         <ListItem key={item.id}>
           <Avatar style={{marginRight: '10px'}} src={item.src}/>
